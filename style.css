@@ -1,0 +1,1327 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+.hero nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 55%;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.hero nav p.logo a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 19px;
+}
+
+.hero nav .menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hero nav .menubtn{
+    display: inline-block;
+    background-color: black;
+    color: grey;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+} 
+
+.hero nav .menu-content{
+    display: none;
+    position: absolute;
+    right: 0;
+    list-style-type: none;
+    background-color: black;
+    width: 375px;
+    z-index: 1;
+}
+
+.hero nav .menu-content a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 15px;
+}
+
+ .hero nav .menu-content a:hover{
+    color: purple;
+} 
+
+.hero nav .menu:hover .menubtn{
+    background-color: black;
+}
+
+.hero nav .menu:hover .menu-content{
+    display: block;
+}
+
+.hero .banner{
+    position: relative;
+}
+
+.hero .banner .txt{
+    position: absolute;
+    top: 70px;
+}
+
+.hero .banner .top{
+    font-size: 60px;
+    text-align: center;
+}
+
+.hero .banner .mid{
+    bottom: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hero .search {
+    display: inline-block;
+    position: relative;
+  }
+  
+.hero .search input[type="text"] {
+    width: 250px;
+    padding: 23px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 130px;
+    margin: 38px;
+    font-size: 17px;
+  }
+  
+.hero .search button[type="submit"] {
+    background-color:  rgb(235, 50, 235);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 23px 23px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 169px;
+    font-size: 15px;
+    left: 269px;
+    transition: .9s ease;
+  }
+  
+.hero .search button[type="submit"]:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+  }
+
+.hero .arrow{
+    position: absolute;
+    bottom: 30px;
+    left: 160px;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 20px 25px;
+    background-color: rgb(235, 50, 235);
+    border: none;
+}  
+
+.hero .services{
+    display: inline-block;
+    position: relative;
+}
+
+.hero .services .service{
+    font-size: 12px;
+    margin: 45px 0 0 100px;
+    letter-spacing: 1px;
+    color: rgb(236, 127, 236);
+}
+
+.hero .services .top{
+    font-size: 30px;
+    margin: 13px 0 65px 15px;
+    text-align: center;
+}
+
+.hero .services .icon{
+    margin: 10px 0 0 160px;
+    font-size: 50px;
+    color: rgb(236, 127, 236);
+}
+
+.hero .services .mid{
+    font-size: 23px;
+    margin: 10px 0 10px 15px;
+    text-align: center; 
+}
+
+.hero .services .txt{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.589);
+    text-align: center;
+    margin: 0 0 50px 0 ;
+}
+
+.hero .offers{
+    display: inline-block;
+    position: relative;
+}
+
+.hero .offers .offer{
+    font-size: 12px;
+    margin: 60px 0 0 90px;
+    letter-spacing: 1px;
+    color: rgb(236, 127, 236);
+}
+
+.hero .offers .top{
+    font-size: 30px;
+    margin: 13px 0 65px 30px;
+    text-align: center;
+}
+
+.hero .offers img{
+    margin: 0 0 10px 17px;
+}
+
+.hero .pictures{
+    position: absolute;
+}
+
+.hero .link{
+   display: inline-block;
+   position: relative;
+}
+
+.hero .link input[type="text"] {
+    width: 272px;
+    height: 150px;
+    padding: 15px 20px 15px; 
+    border: none;
+    border-radius: none;
+    box-shadow: 0 15px 15px  rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 65px;   
+    margin: 0 0 65px 30px;
+  }
+  
+.hero .link button[type="submit"] {
+    background-color:  rgb(235, 50, 235);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 10px; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 165px; 
+    font-size: 12px;
+    left: 305px;
+   
+  }
+
+.hero .prices{
+    display: inline-block;
+    position: relative;
+}  
+
+.hero .prices p.first{
+    bottom: 322px;
+    position: relative;
+    left: 50px;
+    color: gray;
+    font-size: 18px;
+}  
+
+.hero .prices p.line1{
+    left: 130px;
+    bottom: 343px;
+    position: relative;
+    font-size: 18px;
+}
+
+.hero p.mo{
+    position: relative;
+    left: 180px;
+    bottom: 362px;
+    color: gray;
+}
+
+.hero .square{
+    position: relative;
+    display: inline-block;
+}
+
+ .hero .square .bed{
+    position: relative;
+    bottom: 276px;
+    right: 12px;
+    color: gray;
+}
+
+.hero .square .mid{
+    font-size: 19px;
+    right: 13px;
+    position: relative;
+    bottom: 260px;
+}
+
+.hero .square .txt{
+    font-size: 17px;
+    right: 13px;
+    position: relative;
+    bottom: 245px;
+    color: gray;
+}
+
+.hero .pictures .dining img{
+    margin: 160px 0 0 17px;
+}
+
+.hero .pictures .staircase img{
+    margin: 575px 0 0 17px;
+}
+
+.hero .works img{
+    margin: 1050px 0 0 0;
+}
+
+.hero .works{
+    position: absolute;
+}
+
+.hero .flows .service{
+    font-size: 12px;
+    margin: 45px 0 0 100px;
+    letter-spacing: 1px;
+    color: rgb(236, 127, 236);
+    bottom: 1250px;
+    position: relative;
+}
+
+.hero .flows .top{
+    font-size: 39px;
+    margin: 13px 0 65px 15px;
+    text-align: center;
+    color: white;
+    bottom: 1250px;
+    position: relative;
+}
+
+.hero .works button[type="submit"] {
+    background-color:  rgb(235, 50, 235);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 26px 28px;
+    border-radius: 39px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 1230px;
+    font-size: 29px;
+    left: 150px;
+    text-align: center;
+}
+
+.hero .line1 p.mid{
+    bottom: 1210px;
+    position: relative;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.hero .line1 .txt{
+    font-size: 18px;
+    text-align: center;
+    bottom: 1200px;
+    position: relative;
+    color: white;
+    margin: 0 0 77px 0;
+}
+
+.hero .agents1 .works .btn{
+    top: 170px;
+    position: relative;
+}
+
+.hero .people{
+    position: relative;
+}
+
+.hero .people img{
+    margin: 2450px 0 0 17px; 
+}
+
+.hero .people .top{
+    font-size: 25px;
+    margin: 20px 0 15px 17px;
+    color: rgba(0, 0, 0, 0.863);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero .people .txt{
+    font-size: 17px;
+    margin: 20px 8px 0 17px;
+    color: gray;
+    line-height: 1.7;
+}
+
+.hero .figures .mid{
+    margin: 50px 0 15px 17px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.hero .figures .txt{
+    font-size: 20px;
+    bottom: 67px;
+    margin: 0 0 0 115px; 
+    color: gray;
+    position: relative;
+}
+
+.hero .figures .second .txt{
+    margin: 0 0 0 153px;
+}
+
+.hero .figures .last .txt{
+    margin: 0 0 0 90px;
+}
+
+.hero .testy .service{
+    font-size: 12px;
+    margin: 55px 0 0 100px; 
+    letter-spacing: 1px;
+    color: rgb(236, 127, 236);
+}
+
+.hero .testy .top{
+    font-size: 30px;
+    margin: 13px 0 65px 15px; 
+    text-align: center;
+}
+
+.hero .testy .mid{
+    font-size: 17px;
+    color: gray;
+    line-height: 1.5;
+    margin: 80px 10px 0 35px;
+    bottom: 310px;
+    position: relative;
+}
+
+.hero .holder input[type="text"] {
+    width: 286px;
+    height: 200px;
+    padding: 15px 20px 15px; 
+    border: none;
+    border-radius: none;
+    box-shadow: 0 15px 15px  rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 45px;  
+    margin: 0 0 65px 25px;
+}
+
+.hero .testy .btn img{
+    border-radius: 55px;
+    position: relative;
+    bottom: 270px;
+    margin: 0 5px 0 50px; 
+}
+
+.hero .testy .name .top{
+    bottom: 360px;
+    position: relative;
+    font-size: 23px;
+}
+
+.hero .testy .name .mid{
+    bottom: 415px;
+    margin: 0 0 10px 143px;
+    position: relative;
+}  
+
+.hero .staffs{
+    display: inline-block;
+    position: relative;
+}
+
+.hero .staffs .staff{
+    font-size: 12px;
+    margin: 0 0 0 110px;
+    letter-spacing: 1px;
+    color: rgb(236, 127, 236);
+    position: relative;
+    bottom: 260px;
+}
+
+.hero .staffs .top{
+    font-size: 30px;
+    margin: 5px 0 65px 15px;
+    text-align: center;
+    bottom: 250px;
+    position: relative;
+}
+
+.hero .staffs img{
+    margin: 0 0 10px 17px;
+    bottom: 250px;
+    position: relative;
+}
+
+.hero .workers{
+    position: absolute;
+}
+
+.hero .links{
+   display: inline-block;
+   position: relative;
+}
+
+.hero .links input[type="text"] {
+    width: 245px;
+    height: 75px;
+    padding: 15px 20px 15px; 
+    border: none;
+    border-radius: none;
+    box-shadow: 0 15px 15px  rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 310px;   
+    margin: 0 0 65px 38px;
+  }
+
+.hero .identity{
+    display: inline-block;
+    position: relative;
+}  
+
+.hero .identity .top{
+    bottom: 460px;
+    position: relative;
+    font-size: 25px;
+    margin: 0 0 0 50px;
+}  
+
+.hero .identity .mid{
+    margin: 0 0 0 50px;
+    bottom: 450px;
+    position: relative;
+    font-size: 18px;
+    color: gray;
+}
+
+.hero .identity .txt{
+    position: relative;
+    bottom: 470px;
+    font-size: 18px;
+    margin: 0 0 0 125px;
+}
+
+.hero .workers .image2 img{
+    margin: 0 0 0 17px;
+    position: relative;
+    bottom: 170px;
+}
+
+.hero .links2 input[type="text"] {
+    width: 245px;
+    height: 75px;
+    padding: 15px 20px 15px; 
+    border: none;
+    border-radius: none;
+    box-shadow: 0 15px 15px  rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 220px;   
+    margin: 0 0 65px 38px;
+  }
+
+.hero .identity2 .top{
+    bottom: 370px;
+    position: relative;
+    font-size: 25px;
+    margin: 0 0 0 50px;
+}  
+
+.hero .identity2 .mid{
+    margin: 0 0 0 50px;
+    bottom: 360px;
+    position: relative;
+    font-size: 18px;
+    color: gray;
+}
+
+.hero .identity2 .txt{
+    position: relative;
+    bottom: 380px;
+    font-size: 18px;
+    margin: 0 0 0 125px;
+}
+
+
+.hero .workers .image3 img{
+    margin: 0 0 0 17px;
+    position: relative;
+    top: 175px;
+}
+
+.hero .links3 input[type="text"] {
+    width: 245px;
+    height: 75px;
+    padding: 15px 20px 15px; 
+    border: none;
+    border-radius: none;
+    box-shadow: 0 15px 15px  rgba(0, 0, 0, 0.1);
+    position: relative;  
+    margin: 0 0 65px 38px;
+    top: 127px;
+  }
+
+.hero .identity3 .top{
+    position: relative;
+    font-size: 25px;
+    margin: 0 0 0 50px;
+    bottom: 22px;
+}  
+
+.hero .identity3 .mid{
+    margin: 0 0 0 50px;
+    bottom: 12px;
+    position: relative;
+    font-size: 18px;
+    color: gray;
+}
+
+.hero .identity3 .txt{
+    position: relative;
+    bottom: 32px;
+    font-size: 18px;
+    margin: 0 0 0 125px;
+}
+
+.hero .workers .image4 img{
+    margin: 0 0 0 17px;
+    position: relative;
+    top: 520px;
+}
+
+.hero .links4 input[type="text"] {
+    width: 245px;
+    height: 75px;
+    padding: 15px 20px 15px; 
+    border: none;
+    border-radius: none;
+    box-shadow: 0 15px 15px  rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 470px;   
+    margin: 0 0 65px 38px;
+  }
+
+.hero .identity4 .top{
+    top: 315px;
+    position: relative;
+    font-size: 25px;
+    margin: 0 0 0 50px;
+}  
+
+.hero .identity4 .mid{
+    margin: 0 0 0 50px;
+    position: relative;
+    font-size: 18px;
+    color: gray;
+    top: 330px;
+}
+
+.hero .identity4 .txt{
+    position: relative;
+    font-size: 18px;
+    margin: 0 0 100px 125px;
+    top: 310px;
+}
+
+.hero .blogs{
+    position: relative;
+}
+
+.hero .blogs .top{
+    font-size: 12px;
+    margin: 0 0 20px 120px;
+    letter-spacing: 1px;
+    color: rgb(236, 127, 236);
+    position: relative;
+    top: 950px;
+}
+
+.hero .blogs .mid{
+    font-size: 30px;
+    margin: 10px 0 65px 0;
+    text-align: center;
+    position: relative;
+    top: 950px;
+}
+
+.hero .blog2{
+   display: inline-block;
+   position: relative;
+}
+
+.hero .blog2 .top{
+    top: 900px;
+    position: relative;
+    margin: 45px 0 0 17px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.hero .blog2 .mid{
+    top: 900px;
+    position: relative;
+    margin: 7px 0 10px 17px;
+    font-size: 14px;
+    color: gray;
+}
+
+.hero .blog2 img{
+    top: 900px;
+    position: relative;
+    margin: 10px 0 15px 17px;
+}
+
+.hero .blog2 .txt{
+    top: 900px;
+    position: relative;
+    margin: 0 0 0 17px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: gray;
+}
+
+.hero footer{
+    background-color: rgba(240, 233, 233, 0.356);
+    text-align: center;
+    width: 375px;
+    height: 1580px;
+    top: 900px;
+    position: relative;
+    margin: 100px 0 0 0; 
+} 
+
+.hero footer .top{
+    padding: 90px 270px 0 0;
+    font-size: 22px;
+    position: relative;
+}
+
+.hero footer .mid{
+    margin: 30px 30px 0 0;
+    font-size: 17px;
+    position: relative;
+    line-height: 1.5;
+    color: gray;
+}
+
+.hero footer .mid2{
+    margin: 8px 210px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;
+} 
+
+.hero footer .fonticons{
+    margin: 48px 180px 0 0;
+    font-size: 25px;
+    position: relative;
+    color: rgb(235, 50, 235); 
+} 
+
+.hero footer .community{
+    margin: 52px 230px 10px 0;
+    font-size: 22px;
+    position: relative;
+}
+
+.hero footer .arrows{
+    margin: 30px 320px 0 0;
+    font-size: 15px;
+    position: relative;
+    color: rgb(236, 127, 236); 
+}
+
+.hero footer .items .item1{
+    margin: 20px 200px 0 30px;
+    font-size: 17px;
+    position: relative;
+    color: gray;    
+    bottom: 140px;
+}
+
+.hero footer .items .item2{
+    margin: 20px 215px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;    
+    bottom: 147px;
+}
+
+.hero footer .items .item3{
+    margin: 20px 230px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;
+    bottom: 154px;    
+}
+
+.hero footer .items .item4{
+    margin: 20px 250px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;    
+    bottom: 160px;
+}
+
+.hero footer .about{
+    margin: 0 250px 0 0;
+    font-size: 22px;
+    position: relative;
+    bottom: 100px;
+}
+
+.hero footer .arrows2{
+    margin: 0 320px 0 0;
+    font-size: 15px;
+    position: relative;
+    color: rgb(236, 127, 236); 
+    bottom: 65px;
+}
+
+.hero footer .itemsabout .item1{
+    margin: 20px 210px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;    
+    bottom: 190px;
+}
+
+.hero footer .itemsabout .item2{
+    margin: 20px 190px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;    
+    bottom: 197px;
+}
+
+.hero footer .itemsabout .item3{
+    margin: 20px 232px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;
+    bottom: 202px;    
+}
+
+.hero footer .company{
+    margin: 0 250px 0 0;
+    font-size: 22px;
+    position: relative;
+    bottom: 150px;
+}
+
+.hero footer .arrows3{
+    margin: 35px 320px 0 0;
+    font-size: 15px;
+    position: relative;
+    color: rgb(236, 127, 236);
+    bottom: 152px;
+}
+
+.hero footer .itemscompany .item1{
+    margin: 20px 215px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;    
+    bottom: 295px;
+}
+
+.hero footer .itemscompany .item2{
+    margin: 20px 245px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;    
+    bottom: 300px;
+}
+
+.hero footer .itemscompany .item3{
+    margin: 20px 230px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;
+    bottom: 305px;    
+}
+
+.hero footer .itemscompany .item4{
+    margin: 20px 235px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;    
+    bottom: 313px;
+}
+
+.hero footer .question{
+    margin: 0 190px 0 0;
+    font-size: 22px;
+    position: relative;
+    bottom: 270px;
+}
+
+.hero footer .arrows4{
+    margin: 35px 320px 0 0;
+    font-size: 15px;
+    position: relative;
+    color: rgb(236, 127, 236);
+    bottom: 255px;
+}
+
+.hero footer .itemsquestion .item1{
+    margin: 20px 40px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: gray;    
+    bottom: 415px;
+}
+
+.hero footer .itemsquestion .item2{
+    margin: 20px 150px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: rgb(236, 127, 236);    
+    bottom: 405px;
+}
+
+.hero footer .itemsquestion .item3{
+    margin: 20px 100px 0 0;
+    font-size: 17px;
+    position: relative;
+    color: rgb(236, 127, 236);
+    bottom: 395px;    
+}
+
+.hero footer .final{
+    bottom: 300px;
+    position: relative;
+}
+
+.hero footer .scroll{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 20px;   
+}
+
+.hero footer .scroll a{
+    color: white;
+    padding: 17px 20px;
+    background-color: rgb(132, 132, 202);
+    border-radius: 50%;
+}
+
+
+/* About Page Starts Here */
+.banner .page{
+    position: absolute;
+    top: 240px;
+    left: 120px;
+}
+
+.banner .page a{
+    text-decoration: none;
+    color: rgb(46, 44, 44);
+}
+
+.banner .about{
+    position: absolute;
+    top: 280px;
+    left: 80px; 
+    font-size: 60px;
+}
+
+.people-about{
+     position: relative; 
+}
+
+.people-about img{
+    position: absolute;
+    bottom: -90px;
+    margin: 20px 0 0 0;
+}
+
+.people-about .top-about{
+    /* position: absolute; */
+    top: 650px;
+}
+
+.people-about .txt-about{
+    position: relative; 
+    top: 650px;
+}
+
+.top-about{
+    position: relative;
+}
+
+.figures-about .mid-about{
+    margin: 0 0 15px 17px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    top: 650px; 
+    position: relative;
+}
+
+.figures-about .txt-about{
+    font-size: 20px;
+    margin: 20px 0 0 115px; 
+    color: gray;
+    top: 590px;
+    position: absolute;
+}
+
+.figures-about .second-about .txt-about{
+    margin: 0 0 0 153px;
+    top: 680x;
+}
+
+.figures-about .last-about .txt-about{
+    margin: 0 0 0 90px;
+    top: 580px;
+}
+
+.testy-about{
+    position: relative;
+}
+
+.client-about .service-about{
+    top: 620px;
+    position: absolute;
+}
+
+.client-about .top-about{
+    top: 700px;
+    position: absolute;
+    left: 90px;
+}
+
+.testy-about .holder-about{
+    position: absolute;
+    top: 750px;
+}
+
+.testy-about .btn-about{
+    position: absolute;
+    top: 650px;
+}
+
+.testy-about .btn-about img{
+    top: 270px;
+}
+
+.name-about .top-about{
+    top: 900px;
+} 
+
+.name-about .mid-about{
+    top: 850px;
+} 
+/* About Page Ends Here */
+
+
+/* Services Page Starts Here */
+.banner .page1{
+    position: absolute;
+    top: 240px;
+    left: 120px;
+    color: rgb(46, 44, 44);
+}
+
+.banner .page1 a{
+    text-decoration: none;
+    color: rgb(46, 44, 44);
+}
+
+.banner .services{
+    position: absolute;
+    top: 280px;
+    left: 95px; 
+    font-size: 60px;
+}
+
+.works-services img{
+    position: absolute;
+    bottom: -200px;
+}
+
+.flows-services .service{
+    font-size: 12px;
+    margin: 45px 0 0 100px;
+    letter-spacing: 1px;
+    color: rgb(236, 127, 236);
+    top: 90px;
+    position: absolute;
+}
+
+.flows-services .top{
+    font-size: 39px;
+    margin: 13px 0 65px 15px;
+    text-align: center;
+    color: white;
+    top: 95px;
+    position: absolute;
+}
+
+.works-services button[type="submit"] {
+    background-color:  rgb(235, 50, 235);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 26px 28px;
+    border-radius: 39px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 29px;
+    left: 150px;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+}
+
+.line1-services p.mid{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+}
+
+.line1-services .txt{
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    margin: 0 0 77px 0;
+    top: 100px;
+    position: absolute; 
+}
+
+.agents1-services .works .btn{
+    position: absolute;
+    top: 200px;
+}
+
+.paragraph p{
+    position: relative;
+    line-height: 1.5;
+    color: gray;
+    margin: 550px 0 0 17px;
+    top: 900px;
+}
+/* Services page ends here */
+
+
+/* Blog page starts here */
+.banner .page2{
+    position: absolute;
+    top: 240px;
+    left: 120px;
+    color: rgb(46, 44, 44);
+}
+
+.banner .page2 a{
+    text-decoration: none;
+    color: rgb(46, 44, 44);
+}
+
+.banner .blog{
+    position: absolute;
+    top: 280px;
+    left: 70px; 
+    font-size: 60px;
+}
+
+.blog2-page{
+    display: inline-block;
+    position: relative;
+    bottom: 815px;
+}
+
+.hero .final footer{
+    background-color: rgba(240, 233, 233, 0.356);
+    text-align: center;
+    width: 375px;
+    height: 1580px;
+    top: 160px; 
+    position: relative;
+    margin: 100px 0 0 0; 
+} 
+/* Blog page ends here */
+
+
+/* Contact page starts here  */
+.banner .page3{
+    position: absolute;
+    top: 240px;
+    left: 120px;
+    color: rgb(46, 44, 44);
+}
+
+.banner .page3 a{
+    text-decoration: none;
+    color: rgb(46, 44, 44);
+}
+
+.banner .contact{
+    position: absolute;
+    top: 280px;
+    left: 70px; 
+    font-size: 60px;
+} 
+
+.address{
+    position: relative;
+}
+
+.address .top{
+    text-align: center;
+    margin: 130px 0 10px 0;
+    font-size: 30px;
+    color: gray;
+}
+
+.address .mid{
+    text-align: center;
+    margin: 6px 0 15px 0;
+    font-size: 30px;
+}
+
+.address .txt{
+    text-align: center;
+    margin: 6px 5px 10px 5px;
+    font-size: 16px;
+    color: gray;
+}
+
+.tel{
+    position: relative;
+}
+
+.tel .top{
+    text-align: center;
+    margin: 100px 0 10px 0;
+    font-size: 20px;
+    color: gray;
+}
+
+.tel .mid{
+    text-align: center;
+    margin: 6px 0 15px 0;
+    font-size: 30px;
+}
+
+.tel .txt{
+    text-align: center;
+    margin: 6px 5px 20px 5px;
+    font-size: 16px;
+    color: gray;
+}
+
+.mail{
+    position: relative;
+}
+
+.mail .top{
+    text-align: center;
+    margin: 100px 0 10px 0;
+    font-size: 30px;
+    color: gray;
+}
+
+.mail .mid{
+    text-align: center;
+    margin: 6px 0 15px 0;
+    font-size: 30px;
+}
+
+.mail .txt{
+    text-align: center;
+    margin: 6px 5px 10px 5px;
+    font-size: 16px;
+    color: gray;
+}
+
+.writing .top{
+    color: rgba(0, 0, 0, 0.664);
+    text-align: center;
+    margin: 120px 10px 100px 10px;
+    font-size: 35px;
+}
+
+.grand{
+    position: relative;
+}
+
+.grand footer{
+    background-color: rgb(242, 242, 245);
+    text-align: center;
+    width: 330px;
+    height: 450px;
+    /* position: relative; */
+    top: 30px;
+    margin: 0 0 0 20px; 
+} 
+
+.grand form{
+    padding: 50px 15px;
+}
+
+.grand form input{
+    width: 80%;
+    height: 50px;
+    margin: 5px 20px 0 0;
+    text-indent: 5px;
+    border-width: 0 0 1px 0;
+    font-size: 17px;
+    border-radius: 8px;
+
+}
+
+.grand form button{
+    padding: 20px 28px;
+    font-size: 14px;
+    margin: 15px 100px 50px 0;
+    border: none;
+    background-color: rgb(236, 127, 236);
+    color: white;
+    border-radius: 4px;
+}
+
+.last footer{
+    background-color: rgba(240, 233, 233, 0.356);
+    text-align: center;
+    width: 375px;
+    height: 1580px;
+    top: 100px;
+    position: relative;
+    margin: 100px 0 0 0; 
+} 
+/* Contact page stops here */
